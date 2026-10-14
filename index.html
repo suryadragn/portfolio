@@ -1,924 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adhimukti Surya Anindyajati — Web Developer Freelance | Sistem Informasi, API &amp; Aplikasi Web</title>
+  <meta name="description" content="Web developer berpengalaman membangun sistem informasi skala kampus (SIAKAD, PDDikti, KKN) dan aplikasi untuk bisnis: web profil, klinik, sekolah, integrasi API. Terbuka untuk proyek freelance.">
+  <link rel="canonical" href="https://suryaism.my.id/">
+  <meta name="theme-color" content="#0b1020">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://suryaism.my.id/">
+  <meta property="og:title" content="Surya — Web Developer Freelance: Sistem Informasi, API &amp; Aplikasi Web">
+  <meta property="og:description" content="Dari sistem akademik kampus hingga web profil dan aplikasi bisnis. Cepat, rapi, terdokumentasi. Diskusi proyek via WhatsApp.">
+  <meta property="og:image" content="https://suryaism.my.id/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <link rel="icon" href="./assets/img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adhimukti Surya Anindyajati",
+    "alternateName": "Surya",
+    "jobTitle": "Web Developer",
+    "url": "https://suryaism.my.id/",
+    "email": "mailto:adhisurya05@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Karanganyar", "addressRegion": "Jawa Tengah", "addressCountry": "ID" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universitas Sebelas Maret" },
+    "sameAs": ["https://github.com/suryadragn", "https://www.instagram.com/_adhisurya", "https://www.facebook.com/suryaDragn"],
+    "knowsAbout": ["PHP", "Yii2", "Laravel", "JavaScript", "TypeScript", "Python", "REST API", "Docker"]
+  }
+  </script>
 </head>
-
 <body>
+  <a class="skip" href="#main">Lewati ke konten</a>
 
-  <!--
-    - #MAIN
-  -->
+  <header class="nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Beranda"><span class="brand-mark">S</span><span class="brand-name">Surya</span></a>
+      <nav class="menu" id="menu" aria-label="Navigasi utama">
+        <a href="#layanan">Layanan</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Ganti tema terang/gelap"><span aria-hidden="true" data-theme-icon>☾</span></button>
+        <a class="btn btn-small btn-primary" href="https://wa.me/6281329844484?text=Halo%20Surya%2C%20saya%20ingin%20diskusi%20proyek." target="_blank" rel="noopener">Diskusi proyek</a>
+        <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span></button>
+      </div>
+    </div>
+  </header>
 
-  <main>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="badge"><span class="dot" aria-hidden="true"></span> Terbuka untuk proyek freelance</p>
+          <h1>Web developer yang terbiasa membangun <span class="grad">sistem yang benar-benar dipakai.</span></h1>
+          <p class="lead">Saya <strong>Adhimukti Surya Anindyajati</strong> (Surya) — web developer di Karanganyar, Jawa Tengah. Sehari-hari merawat dan mengembangkan sistem akademik skala kampus; di luar itu saya membuat web profil, aplikasi bisnis, dan integrasi API untuk klien. Rapi, terdokumentasi, dan siap dipakai.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#kontak">Mulai diskusi proyek</a>
+            <a class="btn btn-ghost" href="#proyek">Lihat proyek</a>
+          </div>
+          <ul class="trust" aria-label="Ringkasan">
+            <li>Lulusan DIII Teknik Informatika UNS</li>
+            <li>Respon cepat via WhatsApp</li>
+            <li>Remote ke seluruh Indonesia</li>
+          </ul>
+        </div>
+        <div class="hero-card reveal" aria-hidden="true">
+          <div class="avatar-ring"><img src="./assets/img/avatar.png" alt="" width="220" height="220"></div>
+          <div class="float-card fc-1"><b>PHP · Yii2 · Laravel</b><span>backend &amp; sistem informasi</span></div>
+          <div class="float-card fc-2"><b>REST API · SSO · Feeder</b><span>integrasi sistem</span></div>
+          <div class="float-card fc-3"><b>Docker · CI · Dokumentasi</b><span>deploy yang rapi</span></div>
+        </div>
+      </div>
+    </section>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- STATS -->
+    <section class="stats" aria-label="Angka singkat">
+      <div class="wrap stats-grid">
+        <div class="stat"><b data-count="965" data-suffix="+">0</b><span>commit di repositori produksi kampus (GitLab UNS)</span></div>
+        <div class="stat"><b data-count="7">0</b><span>sistem kampus yang saya kembangkan</span></div>
+        <div class="stat"><b data-count="10" data-suffix="+">0</b><span>proyek mandiri &amp; klien</span></div>
+        <div class="stat"><b data-count="2019">0</b><span>aktif di GitHub sejak</span></div>
+      </div>
+    </section>
 
-    <aside class="sidebar" data-sidebar>
+    <!-- LAYANAN -->
+    <section class="section" id="layanan">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Layanan</p>
+          <h2>Apa yang bisa saya kerjakan untuk Anda</h2>
+          <p>Satu orang, dari ide sampai rilis: analisis kebutuhan, pengembangan, deploy, dan dokumentasi.</p>
+        </div>
+        <div class="cards cards-3">
+          <article class="card reveal"><span class="ico" aria-hidden="true">🧩</span><h3>Sistem Informasi Custom</h3><p>Aplikasi berbasis web dengan manajemen pengguna, hak akses (RBAC), laporan, dan dasbor — akademik, administrasi, antrean, hingga rekrutmen.</p></article>
+          <article class="card reveal"><span class="ico" aria-hidden="true">🔌</span><h3>Integrasi API &amp; Sinkronisasi Data</h3><p>REST API, SSO SAML, sinkronisasi data antar sistem, dan integrasi dengan layanan pihak ketiga (Feeder PDDikti, Google, Telegram).</p></article>
+          <article class="card reveal"><span class="ico" aria-hidden="true">🌐</span><h3>Web Profil Institusi &amp; Bisnis</h3><p>Website profil yayasan, sekolah, klinik, dan UMKM dengan tampilan modern, responsif, dan panel admin yang mudah dipakai.</p></article>
+          <article class="card reveal"><span class="ico" aria-hidden="true">🤖</span><h3>Otomasi &amp; Asisten AI</h3><p>Bot Telegram/WhatsApp, pengingat dan kalender otomatis, pembaca dokumen, serta asisten AI pribadi yang aman untuk pekerjaan rutin.</p></article>
+          <article class="card reveal"><span class="ico" aria-hidden="true">🛠️</span><h3>Perbaikan &amp; Pengembangan Lanjutan</h3><p>Audit, perbaikan bug, optimasi performa, dan penambahan fitur pada aplikasi PHP/Yii2/Laravel/CodeIgniter yang sudah berjalan.</p></article>
+          <article class="card reveal"><span class="ico" aria-hidden="true">🚀</span><h3>Deploy &amp; DevOps Ringan</h3><p>Docker, Apache/Nginx reverse proxy, HTTPS, backup, dan CI sederhana — aplikasi tidak hanya jadi, tetapi juga jalan stabil.</p></article>
+        </div>
+      </div>
+    </section>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Adhimukti Surya <br/> Anindyajati</h1>
-
-          <p class="title">Web developer</p>
+    <!-- PROYEK -->
+    <section class="section alt" id="proyek">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Proyek</p>
+          <h2>Pekerjaan yang sudah saya selesaikan</h2>
+          <p>Sistem kampus bersifat internal, jadi kode tidak dipublikasikan dan detail teknis sengaja diringkas. Demo atau penjelasan lebih lanjut tersedia saat diskusi.</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="filters reveal" role="group" aria-label="Filter proyek">
+          <button class="chip is-active" type="button" data-filter="all">Semua</button>
+          <button class="chip" type="button" data-filter="kampus">Sistem Kampus (UNS)</button>
+          <button class="chip" type="button" data-filter="bisnis">Web &amp; Bisnis</button>
+          <button class="chip" type="button" data-filter="ai">AI &amp; Otomasi</button>
+          <button class="chip" type="button" data-filter="tools">Tools</button>
+        </div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+        <div class="projects" data-projects>
+          <!-- Sistem kampus -->
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>PDDIKTI-UNS</h3>
+            <p>Sistem pelaporan data akademik UNS ke PDDikti/Feeder: sinkronisasi mahasiswa, KRS, nilai, dan kelas kuliah, dengan dasbor monitoring, manajemen operator &amp; prodi, serta integrasi beberapa database.</p>
+            <p class="metric">865 commit · kontributor utama</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>JavaScript</li><li>MySQL</li><li>Redis</li><li>Docker</li><li>Feeder API</li></ul>
+          </article>
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>SIAKAD UNS</h3>
+            <p>Pengembangan fitur dan layanan API sistem informasi akademik untuk portal mahasiswa, dosen, dan orang tua: SSO SAML, antrean notifikasi, aturan akademik, dan integrasi lintas database.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>SAML SSO</li><li>REST API</li><li>Redis</li><li>Queue</li></ul>
+          </article>
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>KKN UNS</h3>
+            <p>Sistem pendaftaran dan pengelolaan Kuliah Kerja Nyata dengan validasi syarat SKS dan registrasi yang terhubung ke data akademik.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>JavaScript</li><li>Integrasi data</li></ul>
+          </article>
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>Penjadwalan Kuliah &amp; Ruang</h3>
+            <p>Aplikasi penjadwalan perkuliahan dan ruang dengan data kepegawaian dan akademik terintegrasi, antarmuka admin yang jelas, dan pelaporan.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>AdminLTE</li><li>JavaScript</li></ul>
+          </article>
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>SPMI · Penjaminan Mutu Internal</h3>
+            <p>Kontribusi pada sistem penjaminan mutu internal LPPMP UNS: pengembangan fitur dan perbaikan.</p>
+            <ul class="tags"><li>PHP</li><li>JavaScript</li><li>SCSS</li></ul>
+          </article>
+          <article class="project reveal" data-cat="kampus">
+            <div class="project-top"><span class="pill pill-uns">Sistem Kampus · UNS</span><span class="pill pill-private">Internal</span></div>
+            <h3>E-Square &amp; API Akademik</h3>
+            <p>Pengembangan aplikasi internal UNS dan layanan API untuk kebutuhan akademik-kemahasiswaan (2025–sekarang).</p>
+            <ul class="tags"><li>PHP</li><li>REST API</li><li>JavaScript</li></ul>
+          </article>
 
+          <!-- AI & otomasi -->
+          <article class="project reveal" data-cat="ai">
+            <div class="project-top"><span class="pill pill-ai">AI &amp; Otomasi</span><span class="pill pill-private">Privat</span></div>
+            <h3>SAFA — Smart Assistant For All</h3>
+            <p>Asisten pribadi modular dan aman: memilih model AI otomatis sesuai tugas dan sisa kuota, bot Telegram yang hanya melayani pemilik, tombol persetujuan untuk setiap aksi penting, integrasi Google Calendar &amp; Docs, dan rencana multi-langkah dengan cadangan otomatis.</p>
+            <ul class="tags"><li>Python</li><li>FastAPI</li><li>Telegram Bot API</li><li>Google API</li><li>OAuth PKCE</li><li>Keamanan</li></ul>
+          </article>
+          <article class="project reveal" data-cat="ai">
+            <div class="project-top"><span class="pill pill-ai">AI &amp; Otomasi</span><a class="pill pill-link" href="https://github.com/suryadragn/ai-cv-evaluator" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>AI CV Evaluator</h3>
+            <p>Mini project evaluasi CV memakai Gemini AI dan pencarian vektor (ChromaDB) di atas Node.js — studi kasus pemrosesan dokumen dengan AI.</p>
+            <ul class="tags"><li>Node.js</li><li>Gemini AI</li><li>ChromaDB</li><li>RAG</li></ul>
+          </article>
+
+          <!-- Web & bisnis -->
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><span class="pill pill-private">Privat</span></div>
+            <h3>Power Smart</h3>
+            <p>Aplikasi PWA untuk staf dan manajer: staf menginput customer, manajer menyetujui lewat notifikasi push dan menerbitkan token. Dilengkapi API untuk game WebGL (undian hadiah berbobot stok, antrean global, satu sesi aktif), dasbor superadmin, serta pengerasan keamanan dan backup.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>PWA</li><li>Web Push</li><li>REST API</li><li>WebGL</li><li>Docker</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><span class="pill pill-private">Privat</span></div>
+            <h3>Titip — Platform Titip Jajan</h3>
+            <p>Platform tempat orang memposting rencana jajan dan yang lain ikut menitip menu (per pieces atau nominal bebas), semua tercatat rapi dalam satu tempat.</p>
+            <ul class="tags"><li>Laravel</li><li>MariaDB</li><li>Tailwind</li><li>Docker</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><span class="pill pill-private">Privat</span></div>
+            <h3>ATS — Applicant Tracking System</h3>
+            <p>Sistem manajemen rekrutmen pegawai: RBAC, unggah berkas yang aman, abstraksi pemeriksaan berbasis AI, dan antrean pekerjaan latar belakang.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2 Advanced</li><li>RBAC</li><li>Queue</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><a class="pill pill-link" href="https://github.com/suryadragn/ypks" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>YPKS — Yayasan Pendidikan Karanganyar Surakarta</h3>
+            <p>Portal profil lembaga dengan desain modern (glassmorphism, galeri masonry, animasi saat scroll), manajemen lembaga pendidikan, berita, dan kotak pesan pengunjung.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>AdminLTE 3</li><li>MySQL</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><a class="pill pill-link" href="https://github.com/suryadragn/klinik" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>Website Klinik Griya Husada 1</h3>
+            <p>Website resmi klinik: profil, layanan, dokter, jadwal, berita, galeri, dan kontak, dengan panel admin praktis untuk mengelola konten.</p>
+            <ul class="tags"><li>Laravel</li><li>Blade</li><li>Docker</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><a class="pill pill-link" href="https://github.com/suryadragn/ourkhanz" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>OurKhanz — SIMRS Khanza versi web</h3>
+            <p>Pendaftaran pasien online dengan kuota real-time, jadwal dokter per tanggal dan spesialisasi, pencarian data pasien, dan tampilan antrean pendaftaran terbaru.</p>
+            <ul class="tags"><li>PHP</li><li>Yii2</li><li>AJAX</li><li>JavaScript</li></ul>
+          </article>
+          <article class="project reveal" data-cat="bisnis">
+            <div class="project-top"><span class="pill pill-biz">Web &amp; Bisnis</span><a class="pill pill-link" href="https://github.com/suryadragn/mysekolah" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>CMS Sekolahku</h3>
+            <p>Platform manajemen konten sekolah berbasis PHP native dengan tampilan modern bergaya glassmorphism.</p>
+            <ul class="tags"><li>PHP</li><li>MySQL</li><li>CSS</li></ul>
+          </article>
+
+          <!-- Tools -->
+          <article class="project reveal" data-cat="tools">
+            <div class="project-top"><span class="pill pill-tool">Tools</span><a class="pill pill-link" href="https://github.com/suryadragn/vpn_control" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <h3>VPN Control</h3>
+            <p>Aplikasi GUI kecil untuk menyalakan/mematikan Tailscale, Cloudflare WARP, dan SoftEther VPN dari satu jendela, tanpa mengetik perintah manual.</p>
+            <ul class="tags"><li>Windows</li><li>GUI</li><li>Otomasi</li></ul>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:adhisurya05@gmail.com" class="contact-link">adhisurya05@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+6281329844484" class="contact-link">+62 81329844484</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">January 8, 1997</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Karanganyar, Central Java, Indonesia</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/suryaDragn" target="_blank" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://wa.me/6281329844484" target="_blank" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/_adhisurya" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+    <!-- KEAHLIAN -->
+    <section class="section" id="keahlian">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Keahlian</p>
+          <h2>Teknologi yang saya pakai sehari-hari</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal"><h3>Backend &amp; Framework</h3><ul class="tags big"><li>PHP</li><li>Yii2</li><li>Laravel</li><li>CodeIgniter</li><li>Node.js</li><li>Python · FastAPI</li></ul></div>
+          <div class="skill-group reveal"><h3>Frontend</h3><ul class="tags big"><li>JavaScript</li><li>TypeScript</li><li>HTML · CSS</li><li>Tailwind</li><li>AdminLTE</li><li>PWA</li></ul></div>
+          <div class="skill-group reveal"><h3>Data</h3><ul class="tags big"><li>MySQL · MariaDB</li><li>PostgreSQL</li><li>Redis</li><li>ChromaDB</li></ul></div>
+          <div class="skill-group reveal"><h3>Integrasi &amp; Keamanan</h3><ul class="tags big"><li>REST API</li><li>SAML SSO</li><li>OAuth 2.0 · PKCE</li><li>RBAC</li><li>Feeder PDDikti</li><li>Telegram Bot API</li><li>Google API</li></ul></div>
+          <div class="skill-group reveal"><h3>DevOps</h3><ul class="tags big"><li>Docker</li><li>Apache · Nginx</li><li>Cloudflare Tunnel</li><li>Tailscale</li><li>GitLab CI</li><li>Git</li></ul></div>
+          <div class="skill-group reveal"><h3>Cara kerja</h3><ul class="tags big"><li>Sprint &amp; roadmap</li><li>Dokumentasi (SDD, changelog)</li><li>Review keamanan</li><li>Backup &amp; rollback</li></ul></div>
+        </div>
       </div>
+    </section>
 
-    </aside>
+    <!-- PENGALAMAN -->
+    <section class="section alt" id="pengalaman">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Pengalaman &amp; Pendidikan</p>
+          <h2>Latar belakang</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span class="when">2022 — sekarang</span><h3>Web Developer · Universitas Sebelas Maret (UNS)</h3><p>Mengembangkan dan merawat sistem akademik dan administrasi kampus: SIAKAD, pelaporan PDDikti/Feeder, KKN, penjadwalan, SPMI. Fokus pada API, sinkronisasi data, keamanan akses, deployment berbasis Docker, serta dokumentasi sprint dan perubahan yang bisa dilacak.</p></li>
+          <li class="reveal"><span class="when">2019 — sekarang</span><h3>Freelance &amp; proyek mandiri</h3><p>Web profil institusi, website klinik, CMS sekolah, aplikasi pendaftaran pasien, sistem antrean, rekrutmen, dan aplikasi bisnis — dari kebutuhan klien sampai live.</p></li>
+          <li class="reveal"><span class="when">2015 — 2019</span><h3>DIII Teknik Informatika · Universitas Sebelas Maret</h3><p>Gelar A.Md.Kom.</p></li>
+          <li class="reveal"><span class="when">2012 — 2015</span><h3>SMA Negeri 1 Karanganyar</h3></li>
+        </ol>
+      </div>
+    </section>
 
+    <!-- CARA KERJA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Cara kerja</p>
+          <h2>Jelas dari awal sampai serah terima</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><b>1</b><h3>Diskusi</h3><p>Ceritakan kebutuhan dan target. Saya bantu merapikan lingkup supaya realistis.</p></li>
+          <li class="reveal"><b>2</b><h3>Penawaran &amp; jadwal</h3><p>Estimasi waktu dan biaya tertulis, dibagi per tahap.</p></li>
+          <li class="reveal"><b>3</b><h3>Pengembangan bertahap</h3><p>Kemajuan dilaporkan per sprint, dengan demo agar arah selalu sesuai.</p></li>
+          <li class="reveal"><b>4</b><h3>Rilis &amp; dukungan</h3><p>Deploy, dokumentasi, dan masa dukungan setelah serah terima.</p></li>
+        </ol>
+      </div>
+    </section>
 
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li> -->
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Saya adalah seorang web developer yang berpengalaman dalam membangun dan mengelola situs web yang
-            responsif dan berkualitas tinggi. Saya memiliki keahlian dalam berbagai teknologi web seperti HTML, CSS, JavaScript, dan
-            framework seperti Yii2 dan CodeIgniter. Dengan latar belakang yang kuat dalam desain web dan pengembangan, saya
-            mampu menciptakan solusi web yang inovatif dan efektif untuk memenuhi kebutuhan.
-          </p>
-          <p>
-            Saya berkomitmen untuk terus belajar dan mengikuti perkembangan terbaru dalam industri web development guna
-            memberikan hasil terbaik .
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  Memberikan desain web yang menarik dan responsif untuk pengalaman pengguna yang optimal.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Mengembangkan situs web yang fungsional dan efisien menggunakan teknologi terbaru.
-                </p>
-              </div>
-
-            </li>
-
+    <!-- KONTAK -->
+    <section class="section contact" id="kontak">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Kontak</p>
+          <h2>Punya proyek? Mari bicara.</h2>
+          <p>Ceritakan singkat kebutuhan Anda — web profil, sistem informasi, integrasi API, atau otomasi. Saya balas dengan pertanyaan lanjutan dan estimasi.</p>
+          <ul class="contact-list">
+            <li><span>WhatsApp</span><a href="https://wa.me/6281329844484" target="_blank" rel="noopener">+62 813-2984-4484</a></li>
+            <li><span>Email</span><a href="mailto:adhisurya05@gmail.com">adhisurya05@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/suryadragn" target="_blank" rel="noopener">github.com/suryadragn</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/_adhisurya" target="_blank" rel="noopener">@_adhisurya</a></li>
+            <li><span>Lokasi</span><b>Karanganyar, Jawa Tengah · remote ke seluruh Indonesia</b></li>
           </ul>
-
-        </section>
-
-
-
-
-
-       
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h3 class="h3 timeline-item-title">Universitas Sebelas Maret</h4>
-              <h4 class="h4 timeline-item-title">DIII - Teknik Informatika</h4>
-
-              <span>2015 - 2019</span>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SMA Negeri 1 Karanganyar</h4>
-
-              <span>2012 - 2015</span>
-
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web development (PHP, HTML, CSS, JS, Yii2, CI)</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Database (MySQL , SQL SERVER, Postgre)</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
+        </div>
+        <form class="form reveal" data-wa-form novalidate>
+          <h3>Kirim pesan lewat WhatsApp</h3>
+          <label>Nama<input name="nama" type="text" autocomplete="name" required maxlength="80" placeholder="Nama Anda"></label>
+          <label>Jenis proyek
+            <select name="jenis">
+              <option>Web profil / company profile</option>
+              <option>Sistem informasi custom</option>
+              <option>Integrasi API / sinkronisasi data</option>
+              <option>Otomasi / bot / asisten AI</option>
+              <option>Perbaikan atau pengembangan aplikasi yang ada</option>
+              <option>Lainnya</option>
+            </select>
+          </label>
+          <label>Ceritakan kebutuhan<textarea name="pesan" rows="4" required maxlength="800" placeholder="Apa yang ingin dibuat, untuk siapa, dan target waktunya?"></textarea></label>
+          <button class="btn btn-primary" type="submit">Kirim lewat WhatsApp</button>
+          <p class="hint">Tombol ini membuka WhatsApp dengan pesan yang sudah terisi. Tidak ada data yang disimpan di situs ini.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Adhimukti Surya Anindyajati. Dibuat dengan HTML, CSS, dan sedikit JavaScript.</p>
+      <a href="#top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
 
+  <a class="wa-float" href="https://wa.me/6281329844484?text=Halo%20Surya%2C%20saya%20ingin%20diskusi%20proyek." target="_blank" rel="noopener" aria-label="Chat WhatsApp">WhatsApp</a>
 
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suryaism.my.id/sitemap.xml
