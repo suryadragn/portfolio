@@ -66,10 +66,13 @@ p { margin: 0 0 1em; }
 .icon-btn { width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; font-size: 1.05rem; }
 .icon-btn:hover { background: var(--surface-2); }
 .menu-btn { display: none; }
-.lang { display: inline-flex; padding: 3px; border: 1px solid var(--border); background: var(--surface); border-radius: 12px; }
-.lang button { border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 800; font-size: .78rem; letter-spacing: .04em; padding: 7px 10px; border-radius: 9px; cursor: pointer; }
-.lang button:hover { color: var(--text); }
-.lang button.is-active { background: var(--grad); color: #07101f; }
+.lang { position: relative; display: inline-grid; grid-template-columns: 1fr 1fr; align-items: center; width: 74px; height: 36px; padding: 0; border: 1px solid var(--border); background: var(--surface); border-radius: 999px; cursor: pointer; font: inherit; color: inherit; }
+.lang-opt { position: relative; z-index: 1; text-align: center; font-weight: 800; font-size: .74rem; letter-spacing: .04em; color: var(--muted); transition: color .25s; }
+.lang-knob { position: absolute; top: 3px; left: 3px; width: calc(50% - 3px); height: calc(100% - 6px); border-radius: 999px; background: var(--grad); transition: transform .28s cubic-bezier(.4, 0, .2, 1); }
+.lang.is-en .lang-knob { transform: translateX(100%); }
+.lang:not(.is-en) .lang-opt:first-of-type, .lang.is-en .lang-opt:nth-of-type(2) { color: #07101f; }
+.lang:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .lang-knob, .lang-opt { transition: none; } }
 
 /* ===== Buttons ===== */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 22px; border-radius: 14px; font-weight: 700; border: 1px solid transparent; cursor: pointer; font-family: inherit; font-size: 1rem; transition: transform .15s, box-shadow .15s, background .15s; }

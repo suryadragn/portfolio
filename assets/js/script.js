@@ -71,20 +71,22 @@
       a.setAttribute("href", WA_BASE + "?text=" + encodeURIComponent(hello));
     });
 
-    document.querySelectorAll("[data-lang]").forEach(function (btn) {
-      var active = btn.getAttribute("data-lang") === lang;
-      btn.classList.toggle("is-active", active);
-      btn.setAttribute("aria-pressed", String(active));
-    });
+    var sw = document.querySelector("[data-lang-toggle]");
+    if (sw) {
+      sw.setAttribute("aria-checked", String(lang === "en"));
+      sw.setAttribute("aria-label", lang === "en" ? "Language: English (switch to Indonesian)" : "Bahasa: Indonesia (ganti ke Inggris)");
+      sw.classList.toggle("is-en", lang === "en");
+    }
   }
 
-  document.querySelectorAll("[data-lang]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var next = btn.getAttribute("data-lang");
+  var langSwitch = document.querySelector("[data-lang-toggle]");
+  if (langSwitch) {
+    langSwitch.addEventListener("click", function () {
+      var next = lang === "en" ? "id" : "en";
       applyLang(next);
       safeSet("lang", next);
     });
-  });
+  }
 
   // ============================== Tema (terang/gelap) ==============================
   var savedTheme = safeGet("theme");
