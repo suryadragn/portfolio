@@ -6,7 +6,7 @@ window.I18N = {
     meta_title: "suryaism — Adhimukti Surya Anindyajati | Freelance Web Developer, Indonesia",
     meta_desc: "suryaism (Adhimukti Surya Anindyajati): freelance web developer in Karanganyar, Central Java. Information systems, API integration, and web apps — from campus academic systems (SIAKAD, PDDikti, KKN) to company websites and business apps.",
     og_title: "suryaism — Adhimukti Surya Anindyajati | Freelance Web Developer",
-    og_desc: "From campus academic systems to company websites and business apps. Fast, clean, documented. Discuss your project on WhatsApp.",
+    og_desc: "From campus academic systems to company websites and business apps. Fast, clean, documented. Discuss your project on Telegram.",
     alt1: "Profile photo of Adhimukti Surya Anindyajati (suryaism), web developer",
     ph1: "Your name",
     ph2: "What do you want to build, for whom, and by when?",
@@ -24,7 +24,7 @@ window.I18N = {
     k008: "I'm <strong>Adhimukti Surya Anindyajati</strong> (suryaism) — a web developer in Karanganyar, Central Java. Day to day I maintain and build campus-scale academic systems; beyond that I make company websites, business apps, and API integrations for clients. Clean, documented, and ready to use.",
     k009: "Start a project discussion", k010: "See projects",
     k011: "D3 Informatics Engineering graduate (UNS)",
-    k012: "Fast replies on WhatsApp", k013: "Remote across Indonesia",
+    k012: "Fast replies on Telegram", k013: "Remote across Indonesia",
     k015: "backend &amp; information systems", k017: "system integration", k018: "Docker · CI · Documentation", k019: "clean deployments",
 
     /* stats */
@@ -127,16 +127,26 @@ window.I18N = {
     k149: "Briefly tell me what you need — a company website, an information system, API integration, or automation. I'll reply with follow-up questions and an estimate.",
     k151: "Email", k157: "Location",
     k158: "Karanganyar, Central Java · remote across Indonesia",
-    k159: "Send a message via WhatsApp",
+    k159: "Send a message via Telegram",
     k160: "Name", k173: "Project type", k174: "Describe your needs",
     k161: "Company profile website", k162: "Custom information system",
     k163: "API integration / data sync", k164: "Automation / bot / AI assistant",
     k165: "Fixing or extending an existing application", k166: "Other",
-    k167: "Send via WhatsApp",
-    k168: "This button opens WhatsApp with a pre-filled message. No data is stored on this site.",
+    k167: "Send via Telegram",
+    k168: "This button copies your message and opens Telegram; paste it into the chat. No data is stored on this site.",
     k169: "Back to top ↑",
     k171: "Skip to content",
     k172: "Open for freelance projects",
-    k175: "Adhimukti Surya Anindyajati (suryaism). Built with HTML, CSS, and a little JavaScript."
+    k175: "Adhimukti Surya Anindyajati (suryaism). Built with HTML, CSS, and a little JavaScript.",
+    k176: "Team", k177: "Three teams I work with",
+    k178: "Big projects are not built alone. Campus academic systems, technology and creative work run in three teams that complement each other.",
+    k179: "IT & Software", k181: "Creative",
+    k182: "Interior Design & 3D Artist", k183: "2D & 3D Artist", k184: "Game Development",
+    k187: "Analyst, Programmer & Web Specialist", k188: "Programmer & Web Specialist",
+    k185: "Academic and Student Affairs Systems Management Team",
+    k186: "Directorate of Information and Communication Technology, Universitas Sebelas Maret",
+    tg_copied: "Message copied. Paste it in the Telegram chat that just opened.",
+    tg_manual: "Open Telegram and send your message there. (It could not be copied automatically.)",
+    tg_form: "Hello Surya, I am {nama}.\nProject type: {jenis}\n\n{pesan}"
   }
 };
