@@ -8,7 +8,7 @@
 
   // ============================== Bahasa (ID / EN) ==============================
   var EN = (window.I18N && window.I18N.en) || {};
-  var WA_BASE = "https://wa.me/6281329844484";
+  var TG_URL = "https://t.me/suryaisme";
   var lang = "id";
 
   // Crawler tetap melihat bahasa Indonesia (bahasa utama situs), tidak ikut deteksi bahasa mesin.
@@ -64,12 +64,6 @@
     setMeta('meta[property="og:title"]', "content", tr("og_title", meta.ogTitle));
     setMeta('meta[property="og:description"]', "content", tr("og_desc", meta.ogDesc));
     setMeta('meta[property="og:locale"]', "content", lang === "en" ? "en_US" : "id_ID");
-
-    // Tautan WhatsApp dengan teks salam siap pakai
-    var hello = lang === "en" ? EN.wa_hello : "Halo Surya, saya ingin diskusi proyek.";
-    document.querySelectorAll('a[href^="' + WA_BASE + '?text="]').forEach(function (a) {
-      a.setAttribute("href", WA_BASE + "?text=" + encodeURIComponent(hello));
-    });
 
     var sw = document.querySelector("[data-lang-toggle]");
     if (sw) {
@@ -180,9 +174,11 @@
     counters.forEach(runCount);
   }
 
-  // ============================== Form → WhatsApp ==============================
-  var form = document.querySelector("[data-wa-form]");
+  // ============================== Form → Telegram ==============================
+  // Tautan Telegram tidak andal mengisi pesan otomatis, jadi pesan disalin dulu lalu chat dibuka.
+  var form = document.querySelector("[data-tg-form]");
   if (form) {
+    var status = form.querySelector("[data-form-status]");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var nama = form.elements.nama.value.trim();
@@ -192,9 +188,21 @@
       form.elements.nama.classList.toggle("invalid", !nama);
       form.elements.pesan.classList.toggle("invalid", !pesan);
       if (!nama || !pesan) { return; }
-      var template = lang === "en" ? EN.wa_form : "Halo Surya, saya {nama}.\nJenis proyek: {jenis}\n\n{pesan}";
+      var template = lang === "en" ? EN.tg_form : "Halo Surya, saya {nama}.\nJenis proyek: {jenis}\n\n{pesan}";
       var text = template.replace("{nama}", nama).replace("{jenis}", jenis).replace("{pesan}", pesan);
-      window.open(WA_BASE + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+      var done = function (copied) {
+        if (status) {
+          status.textContent = copied
+            ? (lang === "en" ? EN.tg_copied : "Pesan disalin. Tempel di chat Telegram yang baru terbuka.")
+            : (lang === "en" ? EN.tg_manual : "Buka Telegram lalu kirim pesan Anda di sana. (Pesan tidak bisa disalin otomatis.)");
+        }
+        window.open(TG_URL, "_blank", "noopener");
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      } else {
+        done(false);
+      }
     });
   }
 
